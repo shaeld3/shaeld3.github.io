@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="韩企招聘网提供韩国大厂、中韩合资企业及韩资在华分支的最新招聘信息，包含三星、LG、现代等知名韩企校招社招职位，韩语面试技巧与签证指导。">
+    <meta name="keywords" content="韩企招聘, 韩国公司招聘, 韩资企业招聘, 韩语工作, 韩国驻华招聘">
+    <title>韩企招聘-韩国知名企业职位与求职指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #f8f9fa;
+            --accent-color: #e63946;
+            --text-main: #333333;
+            --text-light: #666666;
+            --border-color: #e0e0e0;
+            --white: #ffffff;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #f4f6f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: 1px solid var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #004494;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            font-size: 12px;
+            border-radius: 4px;
+            margin-right: 6px;
+        }
+
+        .badge-hot {
+            background-color: #fff1f0;
+            color: var(--accent-color);
+        }
+
+        .badge-new {
+            background-color: #e6f7ff;
+            color: var(--primary-color);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-top {
+            background-color: #f8f9fa;
+            font-size: 13px;
+            color: var(--text-light);
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header-top .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header-main {
+            padding: 16px 0;
+        }
+
+        .header-main .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            margin-left: 8px;
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--text-light);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 32px;
+        }
+
+        .nav-menu a {
+            font-weight: 500;
+            color: var(--text-main);
+            position: relative;
+        }
+
+        .nav-menu a:hover, .nav-menu a.active {
+            color: var(--primary-color);
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .user-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0056b3 0%, #003d80 100%);
+            color: var(--white);
+            padding: 60px 0;
+            margin-bottom: 40px;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 16px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 32px;
+            max-width: 600px;
+        }
+
+        .search-box {
+            background: var(--white);
+            padding: 8px;
+            border-radius: 50px;
+            display: flex;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .search-box input {
+            flex: 1;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            outline: none;
+            border-radius: 50px 0 0 50px;
+        }
+
+        .search-box button {
+            border-radius: 50px;
+            padding: 0 30px;
+        }
+
+        /* Main Content Layout */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 240px 1fr 280px;
+            gap: 24px;
+            margin-bottom: 60px;
+        }
+
+        /* Sidebar Left */
+        .sidebar-left {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .filter-card {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        }
+
+        .filter-card h3 {
+            font-size: 16px;
+            margin-bottom: 16px;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 10px;
+        }
+
+        .filter-list li {
+            margin-bottom: 10px;
+        }
+
+        .filter-list a {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        .filter-list a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Job List */
+        .job-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .job-card {
+            background: var(--white);
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+            border-left: 4px solid transparent;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .job-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.06);
+            border-left-color: var(--primary-color);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .company-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .company-logo {
+            width: 48px;
+            height: 48px;
+            background-color: #eee;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            color: #999;
+            font-weight: bold;
+        }
+
+        .job-title h2 {
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+
+        .job-title h2 a {
+            color: var(--text-main);
+        }
+
+        .job-title h2 a:hover {
+            color: var(--primary-color);
+        }
+
+        .company-name {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        .job-meta {
+            display: flex;
+            gap: 16px;
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 16px;
+        }
+
+        .job-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .tag {
+            background-color: #f0f2f5;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #555;
+        }
+
+        .tag.english {
+            background-color: #e6f7ff;
+            color: #1890ff;
+        }
+
+        .tag.korean {
+            background-color: #fff0f6;
+            color: #eb2f96;
+        }
+
+        .job-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .job-salary {
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .job-salary small {
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--text-light);
+            margin-right: 4px;
+        }
+
+        /* Sidebar Right */
+        .sidebar-right {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .promo-card {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+            padding: 24px;
+            border-radius: 8px;
+            text-align: center;
+            color: #333;
+        }
+
+        .promo-card h3 {
+            margin-bottom: 8px;
+            color: #d63384;
+        }
+
+        .promo-card p {
+            font-size: 13px;
+            margin-bottom: 16px;
+        }
+
+        .guide-list {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .guide-item {
+            padding: 16px;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .guide-item:last-child {
+            border-bottom: none;
+        }
+
+        .guide-icon {
+            width: 32px;
+            height: 32px;
+            background-color: #e6f7ff;
+            color: #1890ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        .guide-info h4 {
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .guide-info p {
+            font-size: 12px;
+            color: var(--text-light);
+        }
+
+        /* Section Titles */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -14px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+
+        .view-all {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        .view-all:hover {
+            color: var(--primary-color);
+        }
+
+        /* Featured Companies */
+        .company-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .company-card {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+            transition: all 0.3s;
+        }
+
+        .company-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+
+        .company-logo-large {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 16px;
+            background-color: #f0f2f5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #666;
+        }
+
+        .company-card h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .company-card p {
+            font-size: 12px;
+            color: var(--text-light);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: var(--white);
+            padding: 40px 0;
+            margin-bottom: 60px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+        }
+
+        .faq-question {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .faq-question::before {
+            content: '+';
+            margin-right: 10px;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .faq-question.active::before {
+            content: '-';
+        }
+
+        .faq-answer {
+            color: var(--text-light);
+            font-size: 14px;
+            display: none;
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        .faq-answer.show {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #999;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .main-grid {
+                grid-template-columns: 200px 1fr;
+            }
+            .sidebar-right {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            .header-top {
+                display: none;
+            }
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+            .sidebar-left {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 28px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <span>欢迎访问韩企招聘网，专注于韩国在华企业人才服务</span>
+                <span>客服热线：400-123-4567 (周一至周五 9:00-18:00)</span>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <a href="#" class="logo">
+                    KR-Jobs
+                    <span>韩企招聘</span>
+                </a>
+                <nav class="nav-menu">
+                    <a href="#" class="active">首页</a>
+                    <a href="#">最新职位</a>
+                    <a href="#">名企榜单</a>
+                    <a href="#">求职指南</a>
+                    <a href="#">企业入驻</a>
+                </nav>
+                <div class="user-actions">
+                    <a href="#" class="btn btn-outline" style="padding: 6px 16px; font-size: 14px;">登录</a>
+                    <a href="#" class="btn btn-primary" style="padding: 6px 16px; font-size: 14px;">注册</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>连接中韩人才，开启国际化职业生涯</h1>
+            <p>聚合三星、LG、现代等500+家知名韩企最新招聘信息，提供韩语面试辅导、签证办理及职场资讯。</p>
+            <div class="search-box">
+                <input type="text" placeholder="搜索职位、公司或关键词（如：韩语、财务、销售）">
+                <button class="btn btn-primary">搜索职位</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-grid">
+            <!-- Left Sidebar -->
+            <aside class="sidebar-left">
+                <div class="filter-card">
+                    <h3>热门行业</h3>
+                    <ul class="filter-list">
+                        <li><a href="#">电子/半导体 <span>(124)</span></a></li>
+                        <li><a href="#">汽车制造 <span>(98)</span></a></li>
+                        <li><a href="#">化妆品/护肤 <span>(85)</span></a></li>
+                        <li><a href="#">贸易/进出口 <span>(76)</span></a></li>
+                        <li><a href="#">物流/仓储 <span>(54)</span></a></li>
+                        <li><a href="#">餐饮/食品 <span>(43)</span></a></li>
+                    </ul>
+                </div>
+                <div class="filter-card">
+                    <h3>工作性质</h3>
+                    <ul class="filter-list">
+                        <li><a href="#">全职 <span>(320)</span></a></li>
+                        <li><a href="#">兼职/实习 <span>(45)</span></a></li>
+                        <li><a href="#">远程办公 <span>(12)</span></a></li>
+                    </ul>
+                </div>
+                <div class="filter-card">
+                    <h3>语言要求</h3>
+                    <ul class="filter-list">
+                        <li><a href="#">韩语流利 <span>(210)</span></a></li>
+                        <li><a href="#">英语流利 <span>(180)</span></a></li>
+                        <li><a href="#">双语能力 <span>(95)</span></a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Job Feed -->
+            <main class="job-feed">
+                <div class="section-header">
+                    <h2 class="section-title">最新发布职位</h2>
+                    <a href="#" class="view-all">查看全部 ></a>
+                </div>
+
+                <div class="job-list">
+                    <!-- Job Card 1 -->
+                    <article class="job-card">
+                        <div class="job-header">
+                            <div class="company-info">
+                                <div class="company-logo">LG</div>
+                                <div class="job-title">
+                                    <h2><a href="#">[上海] LG化学 研发部高级工程师</a></h2>
+                                    <div class="company-name">LG化学（中国）投资有限公司</div>
+                                </div>
+                            </div>
+                            <span class="badge badge-hot">急聘</span>
+                        </div>
+                        <div class="job-tags">
+                            <span class="tag">电子/半导体</span>
+                            <span class="tag korean">韩语流利</span>
+                            <span class="tag">本科</span>
+                            <span class="tag">3-5年</span>
+                        </div>
+                        <div class="job-meta">
+                            <span>发布于：2小时前</span>
+                            <span>浏览：128</span>
+                            <span>申请：45</span>
+                        </div>
+                        <div class="job-footer">
+                            <div class="job-salary"><small>月薪</small>20k-35k</div>
+                            <a href="#" class="btn btn-primary" style="padding: 6px 16px; font-size: 14px;">立即申请</a>
+                        </div>
+                    </article>
+
+                    <!-- Job Card 2 -->
+                    <article class="job-card">
+                        <div class="job-header">
+                            <div class="company-info">
+                                <div class="company-logo">HYUNDAI</div>
+                                <div class="job-title">
+                                    <h2><a href="#">[北京] 现代汽车 销售管理培训生</a></h2>
+                                    <div class="company-name">现代汽车（中国）投资有限公司</div>
+                                </div>
+                            </div>
+                            <span class="badge badge-new">校招</span>
+                        </div>
+                        <div class="job-tags">
+                            <span class="tag">汽车制造</span>
+                            <span class="tag english">英语流利</span>
+                            <span class="tag">本科</span>
+                            <span class="tag">应届生</span>
+                        </div>
+                        <div class="job-meta">
+                            <span>发布于：5小时前</span>
+                            <span>浏览：856</span>
+                            <span>申请：320</span>
+                        </div>
+                        <div class="job-footer">
+                            <div class="job-salary"><small>月薪</small>15k-25k</div>
+                            <a href="#" class="btn btn-primary" style="padding: 6px 16px; font-size: 14px;">立即申请</a>
+                        </div>
+                    </article>
+
+                    <!-- Job Card 3 -->
+                    <article class="job-card">
+                        <div class="job-header">
+                            <div class="company-info">
+                                <div class="company-logo">SAMSUNG</div>
+                                <div class="job-title">
+                                    <h2><a href="#">[苏州] 三星电子 物流专员</a></h2>
+                                    <div class="company-name">三星电子（苏州）半导体有限公司</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-tags">
+                            <span class="tag">电子/半导体</span>
+                            <span class="tag">物流/仓储</span>
+                            <span class="tag">大专</span>
+                            <span class="tag">1-3年</span>
+                        </div>
+                        <div class="job-meta">
+                            <span>发布于：1天前</span>
+                            <span>浏览：412</span>
+                            <span>申请：156</span>
+                        </div>
+                        <div class="job-footer">
+                            <div class="job-salary"><small>月薪</small>8k-12k</div>
+                            <a href="#" class="btn btn-primary" style="padding: 6px 16px; font-size: 14px;">立即申请</a>
+                        </div>
+                    </article>
+
+                    <!-- Job Card 4 -->
+                    <article class="job-card">
+                        <div class="job-header">
+                            <div class="company-info">
+                                <div class="company-logo">AMOREPACIFIC</div>
+                                <div class="job-title">
+                                    <h2><a href="#">[广州] 爱茉莉太平洋 市场营销经理</a></h2>
+                                    <div class="company-name">爱茉莉太平洋集团（中国）有限公司</div>
+                                </div>
+                            </div>
+                            <span class="badge badge-hot">急聘</span>
+                        </div>
+                        <div class="job-tags">
+                            <span class="tag">化妆品/护肤</span>
+                            <span class="tag korean">韩语流利</span>
+                            <span class="tag">本科</span>
+                            <span class="tag">5-10年</span>
+                        </div>
+                        <div class="job-meta">
+                            <span>发布于：1天前</span>
+                            <span>浏览：298</span>
+                            <span>申请：89</span>
+                        </div>
+                        <div class="job-footer">
+                            <div class="job-salary"><small>月薪</small>25k-40k</div>
+                            <a href="#" class="btn btn-primary" style="padding: 6px 16px; font-size: 14px;">立即申请</a>
+                        </div>
+                    </article>
+                    
+                    <div style="text-align: center; margin-top: 20px;">
+                        <a href="#" class="btn btn-outline" style="width: 100%;">加载更多职位</a>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Right Sidebar -->
+            <aside class="sidebar-right">
+                <div class="promo-card">
+                    <h3>韩语面试通关班</h3>
+                    <p>由资深HR和韩企在职员工授课，涵盖自我介绍、情景模拟及薪资谈判技巧。</p>
+                    <a href="#" class="btn btn-primary" style="background: #d63384; border-color: #d63384;">立即试听</a>
+                </div>
+
+                <div class="filter-card">
+                    <h3>求职指南</h3>
+                    <ul class="filter-list">
+                        <li><a href="#">如何准备韩企面试？</a></li>
+                        <li><a href="#">韩国工签办理流程详解</a></li>
+                        <li><a href="#">韩企薪资福利体系解析</a></li>
+                        <li><a href="#">中韩职场文化差异指南</a></li>
+                        <li><a href="#">简历如何突出韩语优势</a></li>
+                    </ul>
+                </div>
+
+                <div class="guide-list">
+                    <div class="guide-item">
+                        <div class="guide-icon">📅</div>
+                        <div class="guide-info">
+                            <h4>2024 校园招聘</h4>
+                            <p>三星、LG等名企秋季补录</p>
+                        </div>
+                    </div>
+                    <div class="guide-item">
+                        <div class="guide-icon">💰</div>
+                        <div class="guide-info">
+                            <h4>薪资报告</h4>
+                            <p>最新韩企岗位薪酬排行</p>
+                        </div>
+                    </div>
+                    <div class="guide-item">
+                        <div class="guide-icon">🛡️</div>
+                        <div class="guide-info">
+                            <h4>防骗指南</h4>
+                            <p>识别虚假招聘信息</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Featured Companies -->
+        <section>
+            <div class="section-header">
+                <h2 class="section-title">热门入驻企业</h2>
+                <a href="#" class="view-all">查看全部企业 ></a>
+            </div>
+            <div class="company-grid">
+                <div class="company-card">
+                    <div class="company-logo-large">LG</div>
+                    <h3>LG化学</h3>
+                    <p>全球领先的化学公司</p>
+                </div>
+                <div class="company-card">
+                    <div class="company-logo-large">HYUNDAI</div>
+                    <h3>现代汽车</h3>
+                    <p>世界领先的汽车制造商</p>
+                </div>
+                <div class="company-card">
+                    <div class="company-logo-large">SAMSUNG</div>
+                    <h3>三星电子</h3>
+                    <p>科技巨头，创新驱动</p>
+                </div>
+                <div class="company-card">
+                    <div class="company-logo-large">LOTTE</div>
+                    <h3>乐天集团</h3>
+                    <p>综合贸易企业</p>
+                </div>
+                <div class="company-card">
+                    <div class="company-logo-large">AMORE</div>
+                    <h3>爱茉莉太平洋</h3>
+                    <p>全球知名美妆集团</p>
+                </div>
+                <div class="company-card">
+                    <div class="company-logo-large">POSCO</div>
+                    <h3>POSCO</h3>
+                    <p>世界顶级的钢铁企业</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="section-header">
+                <h2 class="section-title">常见问题解答</h2>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">申请韩企工作需要具备哪些条件？</div>
+                <div class="faq-answer">
+                    通常来说，申请韩企工作需要具备良好的韩语沟通能力（TOPIK 3级以上通常为佳），同时具备相应的专业技能和学历背景。对于中韩合资企业，英语能力也是重要的加分项。
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">韩企的薪资待遇如何？</div>
+                <div class="faq-answer">
+                    韩企的薪资通常具有竞争力，尤其是对于掌握韩语或专业技能的员工。除了基本工资，通常还包含绩效奖金、五险一金、带薪年假以及节日福利等。
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">在韩企工作需要注意哪些文化差异？</div>
+                <div class="faq-answer">
+                    韩企文化强调团队协作、等级制度和勤奋工作。上下级关系明确，沟通时通常比较含蓄，直接表达反对意见可能被视为不尊重。此外，注重准时和守时也是基本要求。
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <p style="font-size: 13px; line-height: 1.8;">韩企招聘网致力于为求职者提供最真实、最全面的韩国在华企业招聘信息，同时为韩资企业提供高效的人才招聘解决方案。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>求职服务</h4>
+                    <ul>
+                        <li><a href="#">职位搜索</a></li>
+                        <li><a href="#">简历模板</a></li>
+                        <li><a href="#">面试技巧</a></li>
+                        <li><a href="#">薪资查询</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>企业服务</h4>
+                    <ul>
+                        <li><a href="#">企业入驻</a></li>
+                        <li><a href="#">职位发布</a></li>
+                        <li><a href="#">人才库</a></li>
+                        <li><a href="#">品牌推广</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li>电话：400-123-4567</li>
+                        <li>邮箱：contact@kr-jobs.com</li>
+                        <li>地址：北京市朝阳区国贸大厦</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 韩企招聘网 版权所有 | 京ICP备12345678号</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Interaction
+        document.addEventListener('DOMContentLoaded', function() {
+            const questions = document.querySelectorAll('.faq-question');
+            
+            questions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const isActive = this.classList.contains('active');
+                    
+                    // Close all other answers
+                    questions.forEach(q => {
+                        q.classList.remove('active');
+                        q.nextElementSibling.classList.remove('show');
+                    });
+                    
+                    // Toggle current answer
+                    if (!isActive) {
+                        this.classList.add('active');
+                        answer.classList.add('show');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+  </html>
