@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="为您提供专业、庄重的丧事办理指南。涵盖殡葬礼仪、遗体接运、丧葬用品选购、告别仪式策划及殡葬法规政策解读，帮助家属体面送别亲人，减轻悲痛中的负担。">
+    <meta name="keywords" content="丧事, 殡葬服务, 遗体接运, 丧葬用品, 殡仪馆, 白事办理指南">
+    <title>丧事-庄重体面的殡葬礼仪与白事办理指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #4a5d4a; /* 沉稳的深绿 */
+            --primary-hover: #3a4a3a;
+            --secondary-color: #8da399;
+            --bg-color: #f7f7f7;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            --radius: 8px;
+            --spacing-unit: 1rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* 顶部导航 */
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        /* Hero 区域 */
+        .hero {
+            background: linear-gradient(135deg, #f0f4f0 0%, #e8e8e8 100%);
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* 主要内容区 */
+        main {
+            padding: 40px 0;
+        }
+
+        /* 概念与背景 */
+        .intro-section {
+            background: var(--card-bg);
+            padding: 32px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 32px;
+        }
+
+        .intro-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--secondary-color);
+            display: inline-block;
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin-top: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .intro-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .intro-text p {
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+        }
+
+        .intro-list li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 12px;
+            color: var(--text-secondary);
+        }
+
+        .intro-list li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        /* 服务流程 */
+        .process-section {
+            margin-bottom: 40px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+            gap: 12px;
+        }
+
+        .section-header h2 {
+            font-size: 1.5rem;
+            color: var(--text-main);
+        }
+
+        .step-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .step-number {
+            background-color: var(--primary-color);
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .step-content p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* 用品选购指南 */
+        .products-section {
+            margin-bottom: 40px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 160px;
+            background-color: #ddd;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 16px;
+        }
+
+        .product-info h3 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .product-info p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* 常见问题 */
+        .faq-section {
+            margin-bottom: 40px;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            margin-bottom: 12px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .faq-question:hover {
+            background-color: #fafafa;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            display: none;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 16px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* 底部 */
+        footer {
+            background-color: #2c3e30;
+            color: #bdc3c7;
+            padding: 48px 0 24px;
+            margin-top: 60px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 16px 0;
+            }
+            nav ul {
+                margin-top: 16px;
+                gap: 16px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-container">
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            <span>殡仪指南</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">首页</a></li>
+                <li><a href="#process">办理流程</a></li>
+                <li><a href="#products">丧葬用品</a></li>
+                <li><a href="#faq">常见问题</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>庄重体面的丧事办理指南</h1>
+        <p>在悲伤时刻，我们致力于为您提供清晰、专业、合规的殡葬服务信息与建议，帮助您顺利完成各项事务，让逝者安息，生者慰藉。</p>
+    </div>
+</section>
+
+<main class="container">
+    
+    <section class="intro-section">
+        <h2>关于丧事办理</h2>
+        <div class="intro-grid">
+            <div class="intro-text">
+                <p>“丧事”是指处理逝者后事的统称，是中华民族传统文化中极为重要的礼仪环节。它不仅是对逝者的告别，也是对生者情感的一种抚慰和仪式感的体现。</p>
+                <p>现代社会的丧事办理更加注重规范化、环保化和服务人性化。从遗体接运到火化安葬，每一个环节都有相应的法律法规和行业标准。本指南旨在梳理通用流程，帮助家属了解基本操作，减少在悲痛中的迷茫与无助。</p>
+            </div>
+            <div class="intro-list">
+                <h3>核心原则</h3>
+                <li>尊重逝者，合乎礼仪</li>
+                <li>遵守法规，规范操作</li>
+                <li>节约资源，绿色殡葬</li>
+                <li>体恤家属，简化流程</li>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="process-section">
+        <div class="section-header">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <h2>标准办理流程</h2>
+        </div>
+        
+        <article class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <h3>联系殡仪馆与通知亲友</h3>
+                <p>第一时间联系当地正规殡仪馆办理手续，通知家属、单位及亲友。可根据实际情况决定是否通知媒体或组织追悼会。</p>
+            </div>
+        </article>
+
+        <article class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <h3>遗体接运与整容</h3>
+                <p>由殡仪馆专用车辆接运遗体。根据家属意愿，进行遗体清洁、防腐或化妆整容，使逝者安详体面。</p>
+            </div>
+        </article>
+
+        <article class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <h3>遗体告别与火化</h3>
+                <p>在殡仪馆告别厅举行告别仪式（可选），随后将遗体送入火化炉火化，领取骨灰盒。</p>
+            </div>
+        </article>
+
+        <article class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <h3>安葬与后续事宜</h3>
+                <p>根据家属选择，将骨灰安葬于公墓或寄存于骨灰堂。处理相关账目，清理灵堂，完成最后的送别仪式。</p>
+            </div>
+        </article>
+    </section>
+
+    <section id="products" class="products-section">
+        <div class="section-header">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <h2>常见丧葬用品</h2>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://picsum.photos/seed/funeral1/300/200" alt="寿衣" class="product-img">
+                <div class="product-info">
+                    <h3>寿衣</h3>
+                    <p>传统观念认为应给逝者穿上新衣，寓意为来世做准备。材质多为棉麻，款式庄重。</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://picsum.photos/seed/funeral2/300/200" alt="花圈花篮" class="product-img">
+                <div class="product-info">
+                    <h3>花圈花篮</h3>
+                    <p>用于告别仪式，表达对逝者的哀悼与缅怀，是丧事活动中必不可少的礼仪用品。</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://picsum.photos/seed/funeral3/300/200" alt="香烛纸钱" class="product-img">
+                <div class="product-info">
+                    <h3>香烛纸钱</h3>
+                    <p>用于祭祀仪式，寄托生者的思念。建议选择符合当地环保规定的祭祀用品。</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://picsum.photos/seed/funeral4/300/200" alt="骨灰盒" class="product-img">
+                <div class="product-info">
+                    <h3>骨灰盒</h3>
+                    <p>安放逝者骨灰的容器，材质多样，有木制、石制、玉制等，寓意厚葬。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <div class="section-header">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <h2>常见问题解答</h2>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">丧事期间有哪些禁忌和注意事项？<span class="faq-icon">▼</span></div>
+            <div class="faq-answer">
+                <p>在传统习俗中，丧事期间家属应穿素色衣服，避免红色。不举办喜庆活动，不参加娱乐聚会。同时，应保持心态平和，注意身体，妥善处理各项事务。</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">遗体火化需要携带哪些证件？<span class="faq-icon">▼</span></div>
+            <div class="faq-answer">
+                <p>通常需要携带逝者的身份证、户口簿、死亡证明（或医院出具的死亡证明）。如果是意外死亡或非正常死亡，还需提供公安机关出具的证明文件。</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">如何选择公墓或骨灰堂？<span class="faq-icon">▼</span></div>
+            <div class="faq-answer">
+                <p>应选择经政府批准、手续齐全、环境规范的经营性公墓。考察其地理位置、管理服务、价格体系以及墓碑刻字规范等，建议实地考察后再做决定。</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer id="contact">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>关于我们</h4>
+                <p style="font-size: 0.9rem; color: #95a5a6; line-height: 1.8;">
+                    本站致力于提供客观、专业的殡葬礼仪知识普及。我们尊重生命，敬畏传统，旨在为面临丧事的家属提供实用的信息参考。
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="#">殡仪服务查询</a></li>
+                    <li><a href="#">公墓信息公示</a></li>
+                    <li><a href="#">殡葬政策法规</a></li>
+                    <li><a href="#">心理疏导资源</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>联系方式</h4>
+                <ul>
+                    <li>服务热线：12345（殡葬服务专线）</li>
+                    <li>咨询时间：24小时（全天候服务）</li>
+                    <li>电子邮箱：service@example.com</li>
+                    <li>地址：XX市殡仪服务中心</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 殡仪指南网. 保留所有权利. 本网站内容仅供参考，具体事务请咨询当地民政部门或殡仪馆。</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // 简单的 FAQ 手风琴交互逻辑
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                // 如果希望每次只能打开一个，取消下面注释
+                /*
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) otherItem.classList.remove('active');
+                });
+                */
+                item.classList.toggle('active');
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
