@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蛋仔派对模拟器 - 3D休闲竞技手游攻略与玩法指南</title>
+    <meta name="description" content="蛋仔派对模拟器是热门3D休闲竞技手游的官方模拟器版本。本站提供最新模拟器下载、电脑端配置教程、键位设置指南以及海量高分通关视频攻略，助您在手机端也能体验流畅的派对竞技乐趣。">
+    <meta name="keywords" content="蛋仔派对模拟器,蛋仔派对电脑版,蛋仔派对模拟器下载,蛋仔派对键位设置,蛋仔派对攻略,蛋仔派对配置要求">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #FFB800;
+            --secondary-color: #4A90E2;
+            --accent-color: #FF5E5E;
+            --bg-color: #F5F7FA;
+            --card-bg: #FFFFFF;
+            --text-main: #333333;
+            --text-light: #666666;
+            --border-radius: 12px;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-main);
+            position: relative;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--secondary-color);
+        }
+
+        nav a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -24px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--secondary-color);
+            border-radius: 3px 3px 0 0;
+        }
+
+        .btn-download {
+            background: linear-gradient(135deg, var(--primary-color), #FFD700);
+            color: #fff;
+            padding: 8px 24px;
+            border-radius: 20px;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(255, 184, 0, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-download:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 184, 0, 0.6);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #FFF5E6 0%, #E3F2FD 100%);
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -10%;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 184, 0, 0.1);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            right: -5%;
+            width: 400px;
+            height: 400px;
+            background: rgba(74, 144, 226, 0.1);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .hero h1 span {
+            color: var(--secondary-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 40px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 12px 36px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: var(--secondary-color);
+            padding: 12px 36px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: 2px solid var(--secondary-color);
+        }
+
+        /* Features Section */
+        .section {
+            padding: 60px 20px;
+            max-width: var(--container-width);
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Simulator Download Section */
+        .download-section {
+            background-color: white;
+            border-radius: 20px;
+            padding: 60px;
+            margin-bottom: 60px;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .download-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .download-info h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .download-info p {
+            color: var(--text-light);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .os-list {
+            margin-bottom: 30px;
+        }
+
+        .os-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .os-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .download-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn-large {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 16px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(255, 184, 0, 0.3);
+            transition: all 0.3s;
+        }
+
+        .btn-large:hover {
+            background-color: #ff9900;
+            transform: scale(1.02);
+        }
+
+        .download-placeholder {
+            flex: 1;
+            min-width: 300px;
+            height: 300px;
+            background-color: #f8f9fa;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #ddd;
+            position: relative;
+        }
+
+        .download-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 14px;
+            opacity: 0.9;
+        }
+
+        /* Guide List */
+        .guide-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .guide-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .guide-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .guide-img {
+            height: 180px;
+            background-color: #eee;
+            position: relative;
+        }
+
+        .guide-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .guide-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        .guide-content {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .guide-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .guide-content p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            flex: 1;
+        }
+
+        .guide-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #999;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: white;
+            border-radius: 20px;
+            padding: 50px;
+            margin-bottom: 60px;
+            box-shadow: var(--shadow);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            margin-top: 15px;
+            color: var(--text-light);
+            display: none;
+            padding-left: 10px;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 60px 20px 20px;
+        }
+
+        .footer-content {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #bdc3c7;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                display: none; /* Simplified for mobile */
+            }
+
+            .download-section {
+                padding: 30px;
+            }
+            
+            .download-placeholder {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span>🥚</span> 蛋仔派对模拟器
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#download">模拟器下载</a></li>
+                    <li><a href="#guide">玩法攻略</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+            <a href="#download" class="btn-download">立即开始</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>在电脑上畅玩 <span>蛋仔派对</span> 模拟器</h1>
+                <p>告别手机小屏幕，使用专业模拟器在电脑上享受高帧率、高清晰度的3D休闲竞技体验。自定义键位、开启悬浮窗，打造你的专属派对竞技场。</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn-primary">下载模拟器</a>
+                    <a href="#guide" class="btn-secondary">查看教程</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="section">
+            <div class="section-header">
+                <h2>为什么选择模拟器</h2>
+                <p>电脑端体验更佳，功能更强大</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>自定义键位</h3>
+                    <p>支持鼠标、键盘自定义操作，告别手机误触，操作更精准，反应更快。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🖥️</div>
+                    <h3>大屏沉浸体验</h3>
+                    <p>在27英寸甚至更大显示器上游玩，享受高清画质与流畅帧率，细节一览无余。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>高性能运行</h3>
+                    <p>利用电脑强大的CPU和GPU资源，解决手机发热、掉帧问题，稳定不掉线。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>多开与社交</h3>
+                    <p>支持多开运行，轻松管理多个账号，与好友同屏竞技，语音交流更清晰。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download" class="section">
+            <div class="download-section">
+                <div class="download-info">
+                    <h2>安全稳定的模拟器</h2>
+                    <p>选择经过官方认证的安卓模拟器，兼容性最好，安全无毒，支持Windows 10/11系统，一键安装即可畅玩。</p>
+                    
+                    <div class="os-list">
+                        <div class="os-item">
+                            <div class="os-icon">💻</div>
+                            <span>Windows 10 / 11 (64位)</span>
+                        </div>
+                        <div class="os-item">
+                            <div class="os-icon">🛡️</div>
+                            <span>官方认证，安全无毒</span>
+                        </div>
+                        <div class="os-item">
+                            <div class="os-icon">⚙️</div>
+                            <span>支持OpenGL加速</span>
+                        </div>
+                    </div>
+
+                    <div class="download-actions">
+                        <a href="#" class="btn-large" onclick="alert('模拟器下载链接已复制，请前往下载中心获取。')">下载蛋仔派对模拟器</a>
+                        <p style="font-size: 0.85rem; color: #999; text-align: center;">安装包大小约 500MB · 支持一键安装游戏</p>
+                    </div>
+                </div>
+                <div class="download-placeholder">
+                    <img src="https://picsum.photos/seed/danzai/600/400" alt="蛋仔派对模拟器界面预览">
+                    <div style="position: absolute; bottom: 20px; left: 20px; background: rgba(255,255,255,0.9); padding: 10px; border-radius: 8px; font-size: 0.8rem; color: #333;">
+                        <strong>PC端界面预览</strong><br>支持鼠标瞄准与走位
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guides -->
+        <section id="guide" class="section">
+            <div class="section-header">
+                <h2>新手攻略与教程</h2>
+                <p>从零开始，快速上手的通关指南</p>
+            </div>
+            <div class="guide-list">
+                <article class="guide-card">
+                    <div class="guide-img">
+                        <img src="https://picsum.photos/seed/guide1/400/250" alt="键位设置教程">
+                        <span class="guide-tag">新手必看</span>
+                    </div>
+                    <div class="guide-content">
+                        <h3>蛋仔派对电脑版键位设置全攻略</h3>
+                        <p>详细讲解如何将移动端的滑动操作映射到键盘和鼠标上，推荐最适合竞技的键位布局。</p>
+                        <div class="guide-meta">
+                            <span>阅读时间: 5分钟</span>
+                            <span>2023-10-24</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="guide-card">
+                    <div class="guide-img">
+                        <img src="https://picsum.photos/seed/guide2/400/250" alt="高分通关技巧">
+                        <span class="guide-tag">进阶技巧</span>
+                    </div>
+                    <div class="guide-content">
+                        <h3>如何在模拟器中打出高分操作</h3>
+                        <p>利用电脑鼠标的高灵敏度，掌握跳跃、滚动和抓取的微操技巧，轻松应对高难度地图。</p>
+                        <div class="guide-meta">
+                            <span>阅读时间: 8分钟</span>
+                            <span>2023-10-22</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="guide-card">
+                    <div class="guide-img">
+                        <img src="https://picsum.photos/seed/guide3/400/250" alt="性能优化">
+                        <span class="guide-tag">硬件优化</span>
+                    </div>
+                    <div class="guide-content">
+                        <h3>模拟器卡顿怎么办？性能优化指南</h3>
+                        <p>提供显卡驱动更新、虚拟化技术开启及内存分配调整的具体步骤，确保游戏流畅运行。</p>
+                        <div class="guide-meta">
+                            <span>阅读时间: 6分钟</span>
+                            <span>2023-10-20</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section">
+            <div class="section-header">
+                <h2>常见问题解答</h2>
+            </div>
+            <div class="faq-section">
+                <div class="faq-item">
+                    <div class="faq-question">电脑玩蛋仔派对需要什么配置？</div>
+                    <div class="faq-answer">最低配置要求 Intel i3 或同等级处理器，4GB 内存，NVIDIA GTX 660 或同等级显卡。推荐配置建议使用 i5 处理器，8GB 内存，GTX 960 或以上显卡，以确保高画质流畅运行。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">模拟器版和手机版数据互通吗？</div>
+                    <div class="faq-answer">是的，蛋仔派对官方支持多端互通。只要使用同一账号登录模拟器，即可与手机端好友进行联机对战，进度也会同步。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何在电脑上使用语音聊天？</div>
+                    <div class="faq-answer">大多数安卓模拟器都内置了语音功能。您可以直接使用模拟器自带的麦克风，或者连接电脑外接麦克风，游戏内即可进行语音交流。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">模拟器版会有封号风险吗？</div>
+                    <div class="faq-answer">只要是使用官方认证的模拟器客户端登录，且未进行任何第三方外挂修改操作，都是安全合规的，不会出现封号风险。</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>关于本站</h4>
+                <p style="color: #bdc3c7; font-size: 0.9rem; line-height: 1.6;">
+                    本站为蛋仔派对玩家提供模拟器下载、电脑端配置及玩法攻略服务。我们致力于帮助玩家在电脑上获得更好的游戏体验。
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="#">模拟器下载</a></li>
+                    <li><a href="#">键位设置指南</a></li>
+                    <li><a href="#">地图排行榜</a></li>
+                    <li><a href="#">玩家社区</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>联系方式</h4>
+                <ul>
+                    <li><a href="#">意见反馈</a></li>
+                    <li><a href="#">合作洽谈</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 蛋仔派对模拟器攻略网. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+                      </html>
