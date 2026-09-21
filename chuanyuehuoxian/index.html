@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="穿越火线灵狐者专区，提供灵狐者角色详细介绍、获取途径、皮肤展示、属性对比及CF手游/端游最新活动资讯。">
+    <meta name="keywords" content="穿越火线灵狐者,CF灵狐者,CF角色,灵狐者属性,CF手游灵狐者">
+    <title>穿越火线灵狐者-CF经典角色深度解析与获取指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #ff3e3e;
+            --secondary-color: #ffd700;
+            --dark-bg: #1a1a1a;
+            --card-bg: #2a2a2a;
+            --text-main: #ffffff;
+            --text-sub: #b0b0b0;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "Heiti SC", sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: rgba(26, 26, 26, 0.95);
+            border-bottom: 2px solid var(--primary-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .nav-container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--text-main);
+            margin-left: 5px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            font-size: 16px;
+            color: var(--text-sub);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/seed/cf_spy/1920/1080') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(255, 62, 62, 0.5);
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-sub);
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #ff1f1f;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--text-main);
+            margin-left: 10px;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--text-main);
+            color: var(--dark-bg);
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: var(--container-width);
+            margin: 40px auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section-title {
+            font-size: 28px;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 15px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Character Profile Grid */
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .character-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .char-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            background-color: #000;
+        }
+
+        .char-info {
+            padding: 20px;
+        }
+
+        .char-name {
+            font-size: 24px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .char-stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .stat-item h4 {
+            font-size: 32px;
+            color: var(--secondary-color);
+        }
+
+        .stat-item p {
+            font-size: 12px;
+            color: var(--text-sub);
+        }
+
+        /* Attributes Table */
+        .attributes-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .attributes-table th, .attributes-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+
+        .attributes-table th {
+            background-color: #333;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .attributes-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .attributes-table tr:hover {
+            background-color: #333;
+        }
+
+        /* Skins Section */
+        .skins-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .skin-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .skin-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skin-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #222;
+        }
+
+        .skin-info {
+            padding: 15px;
+        }
+
+        .skin-name {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .skin-type {
+            font-size: 12px;
+            color: var(--text-sub);
+            background-color: #444;
+            padding: 2px 6px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        /* Comparison Section */
+        .comparison-container {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 60px;
+        }
+
+        .comparison-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .char-select {
+            padding: 8px;
+            background-color: #333;
+            color: white;
+            border: 1px solid #444;
+            border-radius: 4px;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .comparison-table th, .comparison-table td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #444;
+        }
+
+        .comparison-table th {
+            background-color: #333;
+        }
+
+        .highlight-win {
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        .highlight-lose {
+            color: #f44336;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background-color: var(--card-bg);
+            margin-bottom: 15px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .faq-question:hover {
+            background-color: #333;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px 20px;
+            color: var(--text-sub);
+            display: none;
+            border-top: 1px solid #333;
+            padding-top: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            padding: 40px 0;
+            margin-top: 60px;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            margin: 0 10px;
+            color: var(--text-sub);
+        }
+
+        .copyright {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+
+            nav ul {
+                margin-top: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .profile-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .char-img {
+                height: 250px;
+            }
+            
+            .comparison-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">CF <span>角色百科</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#profile">角色档案</a></li>
+                    <li><a href="#skins">皮肤展示</a></li>
+                    <li><a href="#guide">获取攻略</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>穿越火线：灵狐者</h1>
+            <p>经典女性角色代表，拥有独特的“狐步”动作与极高的移动速度。深入解析CF中的热门角色之一。</p>
+            <div>
+                <button class="btn" onclick="document.getElementById('profile').scrollIntoView({behavior: 'smooth'})">查看属性</button>
+                <button class=" btn-outline" onclick="document.getElementById('skins').scrollIntoView({behavior: 'smooth'})">浏览皮肤</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <!-- Character Profile Section -->
+        <section id="profile">
+            <h2 class="section-title">角色档案</h2>
+            <div class="profile-grid">
+                <article class="character-card">
+                    <img src="https://picsum.photos/seed/spy_girl/400/500" alt="灵狐者角色立绘" class="char-img">
+                    <div class="char-info">
+                        <h3 class="char-name">灵狐者</h3>
+                        <p style="color: #888; font-size: 14px;">代号：Fox | 稀有度：SR</p>
+                        <p>作为CF中的标志性女性角色，灵狐者以其优雅的身姿和敏捷的身手著称。在生化模式中，她拥有极快的移动速度，是生存的关键。</p>
+                    </div>
+                </article>
+                
+                <article>
+                    <table class="attributes-table">
+                        <thead>
+                            <tr>
+                                <th>基础属性</th>
+                                <th>数值/描述</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>移动速度</strong></td>
+                                <td><span style="color:var(--primary-color)">极高</span> (生化模式加成显著)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>跳跃高度</strong></td>
+                                <td>普通</td>
+                            </tr>
+                            <tr>
+                                <td><strong>换弹速度</strong></td>
+                                <td>普通</td>
+                            </tr>
+                            <tr>
+                                <td><strong>近战攻击范围</strong></td>
+                                <td>普通</td>
+                            </tr>
+                            <tr>
+                                <td><strong>特殊技能</strong></td>
+                                <td>“狐步”：移动时带有特殊的身体晃动，在生化模式中能更容易躲避感染。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skins Section -->
+        <section id="skins">
+            <h2 class="section-title">经典皮肤系列</h2>
+            <div class="skins-grid">
+                <div class="skin-card">
+                    <img src="https://picsum.photos/seed/fox_red/300/300" alt="灵狐者-赤焰" class="skin-img">
+                    <div class="skin-info">
+                        <div class="skin-name">灵狐者-赤焰</div>
+                        <span class="skin-type">节日限定</span>
+                    </div>
+                </div>
+                <div class="skin-card">
+                    <img src="https://picsum.photos/seed/fox_gold/300/300" alt="灵狐者-幻影" class="skin-img">
+                    <div class="skin-info">
+                        <div class="skin-name">灵狐者-幻影</div>
+                        <span class="skin-type">炫彩系列</span>
+                    </div>
+                </div>
+                <div class="skin-card">
+                    <img src="https://picsum.photos/seed/fox_blue/300/300" alt="灵狐者-冰霜" class="skin-img">
+                    <div class="skin-info">
+                        <div class="skin-name">灵狐者-冰霜</div>
+                        <span class="skin-type">冰雪系列</span>
+                    </div>
+                </div>
+                <div class="skin-card">
+                    <img src="https://picsum.photos/seed/fox_purple/300/300" alt="灵狐者-魅影" class="skin-img">
+                    <div class="skin-info">
+                        <div class="skin-name">灵狐者-魅影</div>
+                        <span class="skin-type">史诗系列</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Section -->
+        <section id="guide">
+            <h2 class="section-title">角色对比分析</h2>
+            <div class="comparison-container">
+                <div class="comparison-header">
+                    <select class="char-select">
+                        <option>灵狐者</option>
+                        <option>黑骑士</option>
+                        <option>飞虎队</option>
+                    </select>
+                    <span style="color: #666;">VS</span>
+                    <select class="char-select">
+                        <option>黑骑士</option>
+                        <option>灵狐者</option>
+                        <option>飞虎队</option>
+                    </select>
+                </div>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>对比项目</th>
+                            <th>灵狐者</th>
+                            <th>黑骑士</th>
+                            <th>飞虎队</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>生化模式</strong></td>
+                            <td class="highlight-win">★★★★★ (移动速度最快)</td>
+                            <td>★★★★ (防御力高)</td>
+                            <td>★★★★ (移动速度优秀)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>团队竞技</strong></td>
+                            <td>★★★☆☆ (普通)</td>
+                            <td>★★★★☆ (防闪效果)</td>
+                            <td>★★★★★ (防闪、防摔)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>爆破模式</strong></td>
+                            <td>★★★☆☆ (无特殊加成)</td>
+                            <td>★★★☆☆ (无特殊加成)</td>
+                            <td>★★★☆☆ (无特殊加成)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>获取难度</strong></td>
+                            <td>★★★★☆ (活动获取)</td>
+                            <td>★★★☆☆ (充值或活动)</td>
+                            <td>★★☆☆☆ (老角色/活动)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <h2 class="section-title">常见问题解答</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>灵狐者在生化模式中真的比其他角色快吗？</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    是的，灵狐者在生化模式中的移动速度加成是最高的，这使得她在面对僵尸追击时拥有极高的生存率，能够更快地寻找掩体。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>灵狐者有防闪效果吗？</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    灵狐者本身没有防闪光弹效果。防闪效果主要存在于飞虎队、黑骑士等角色身上。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>如何获得灵狐者？</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    灵狐者通常作为游戏内的节日活动奖励出现，或者通过特定的任务、签到获得，有时也会在商城出售永久版本。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>灵狐者的“狐步”有实际作用吗？</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    “狐步”主要是视觉效果，但在生化模式下，由于角色的身体晃动，有时候在跳跃或移动时更容易躲避僵尸的判定范围。
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">关于我们</a>
+            <a href="#">合作联系</a>
+            <a href="#">免责声明</a>
+            <a href="#">隐私政策</a>
+        </div>
+        <p class="copyright">Copyright © 2023 CF角色百科. 本站为玩家攻略站点，非腾讯官方。</p>
+    </footer>
+
+    <script>
+        // FAQ Toggle Logic
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+
+        // Smooth scroll for navigation links (Polyfill-like behavior for older browsers)
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
